@@ -1,0 +1,91 @@
+%% start of file `resume.tex'.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage{verbatim}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% used for ~ character
+\usepackage{textcomp}
+
+% adjust the page margins
+\usepackage[scale=0.9,top=1cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{Hans}
+\familyname{Wustrack}
+\address{1006 Warfield Ave}{Oakland, CA 94610}    % optional, remove the line if not wanted
+\mobile{414-828-0127}                    % optional, remove the line if not wanted
+\email{hans.wustrack@gmail.com}                      % optional, remove the line if not wanted
+%\homepage{http://markliu.me}                % optional, remove the line if not wanted
+%\extrainfo{\url{http://markliu.me}} % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+%\vspace*{-10mm}
+
+\section{Education}
+\cventry{2010--2014}{BS, Mechanical Engineering}{University of Wisconsin - Madison}{Madison, WI}{}{}
+\cvline{gpa:}{\small 3.72/4.0}
+
+
+\section{Experience}
+
+\cventry[1em]{2017--2019}{Software Developer}{OSIsoft LLC}{San Leandro, CA}{}{
+OSIsoft provides a data infrastructure used by 65\% of the industrial Fortune 500, deployed on over 19,000 sites, and collecting 1.5+ billion data streams worldwide. My team is working on bringing OSIsoft's data infrastructure into the cloud.\\
+\\
+I'm working on a pub sub data pipeline that routes data to our distributed data store. We're building this with microservices hosted in Microsoft's Azure Service Fabric. My team is responsible for developing these new microservices, supporting our legacy cloud platform – launched in 2013 – and maintaining our json based message specification.
+\begin{itemize}
+	\item Worked with a small team to migrate our backend from Azure Table Storage to Azure SQL
+	\begin{itemize}
+		\item Designed and benchmarked the schema
+		\item Rewrote our storage layer using Entity Framework Core
+	\end{itemize}
+	\item As team security champion, led security reviews and setup nightly static analysis scans of our codebase using Coverity and MSRD
+	\item Designed and implemented the first version of access control in our services
+	\item Led production releases of our legacy cloud platform which upgrades our cloud components as well as the on-premise components hosted by our customers
+	\item Taught a class to another development team about our json based message format
+	\item Participated in support rotations where I was the front-line support for any questions/issues from Customer Support
+\end{itemize}
+}
+
+\cventry[1em]{2016--2017}{IT Developer}{OSIsoft LLC}{San Leandro, CA}{}{
+A colleague and I moved to IT to form a development team of just the two of us and continued working closely with the Customer Support Department – pitching, designing, developing, and releasing applications for their use. Our main project was a Windows Form utility to help Tech Support engineers troubleshoot a customer’s system. The app would run a series of modules in parallel to attempt to isolate issues and report them to the Tech Support engineer. Unfortunately, the project was killed because another engineering team was already working on a similar project.
+}
+
+\cventry[1em]{2015--2016}{Customer Support Engineer}{OSIsoft LLC}{San Leandro, CA}{}{
+Rotated between Tech Support and Field Service departments. Both required working directly with customers to install, upgrade, and troubleshoot the OSIsoft product suite. On Tech Support, I closed over 500 cases and was in the top 10\% of engineers by closed cases.
+}
+
+\cventry[1em]{2014--2015}{Manufacturing Engineer}{Precision Machine Works}{Tacoma, WA}{}{
+Primary engineer on multiple Boeing 787 contracts for which I would write, submit, and maintain D6-1276 controlled manufacturing plans. One of my focuses was on reducing our volume of discrepant inventory, which I was able to reduce by \$500,000 worth of parts.
+}
+
+\section{Technical Experience}
+\subsection{Proficient With}
+\cvline{languages}{\small C\#, JavaScript}
+\cvline{technologies}{\small .NET Framework/Core, ASP.NET/Core, Azure DevOps, Git, Visual Studio, WinDbg, Entity Framework Core (ORM), Azure - Service Fabric, Event Hubs, Table Storage, Key Vault, SQL}
+\subsection{Experience With}
+\cvline{languages}{\small PHP, Java, Python, C}
+\cvline{technologies}{\small Apache, Nginx, MySQL}
+
+\end{document}
