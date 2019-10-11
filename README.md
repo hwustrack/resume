@@ -1,4 +1,4 @@
-This repo is to used as a repo for my personal resume.
+This repo is for my personal resume.
 
 How to compile and view on Windows
 1. Install a TeX distribution like [MiKTeX](https://miktex.org/)
