@@ -6,7 +6,7 @@
 
 % moderncv themes
 \moderncvstyle{classic}
-\moderncvcolor{blue}
+\moderncvcolor{yellow}
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
@@ -20,6 +20,11 @@
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
+% use black for bullet points
+\renewcommand{\labelitemi}{$\textcolor{black}{\bullet}$}
+\renewcommand{\labelitemii}{$\textcolor{black}{\cdot}$}
+\renewcommand{\labelitemiii}{$\textcolor{black}{\diamond}$}
+\renewcommand{\labelitemiv}{$\textcolor{black}{\ast}$}
 
 % personal data
 \firstname{Hans}
