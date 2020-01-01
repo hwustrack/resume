@@ -26,6 +26,17 @@
 \renewcommand{\labelitemiii}{$\textcolor{black}{\diamond}$}
 \renewcommand{\labelitemiv}{$\textcolor{black}{\ast}$}
 
+% remove icons for top right header
+\renewcommand*{\addresssymbol}       {}
+\renewcommand*{\mobilephonesymbol}   {}
+\renewcommand*{\fixedphonesymbol}    {}
+\renewcommand*{\faxphonesymbol}      {}
+\renewcommand*{\emailsymbol}         {}
+\renewcommand*{\homepagesymbol}      {}
+\renewcommand*{\linkedinsocialsymbol}{}
+\renewcommand*{\twittersocialsymbol} {}
+\renewcommand*{\githubsocialsymbol}  {}
+
 % personal data
 \firstname{Hans}
 \familyname{Wustrack}
@@ -77,7 +88,8 @@ Rotated between Tech Support and Field Service departments. Both required workin
 }
 
 \section{Projects}
-\cvline{Nothin But Scores}{\href{https://nothinbutscores.com/}{Nothin But Scores} is a service that posts final scores from sporting events to dedicated Twitter accounts. The backend is built with Azure Functions, a sports API, MySportsFeeds, and the Twitter API. The landing page is built with Hugo and Tailwind CSS. See more at nothinbutscores.com.}
+\cvline{Nothin But Scores}{Nothin But Scores is a service that posts final scores from sporting events to dedicated Twitter accounts. The backend is built with Azure Functions, a sports API, MySportsFeeds, and the Twitter API. The landing page is built with Hugo and Tailwind CSS. See more at \href{https://nothinbutscores.com/}{nothinbutscores.com}.}
+
 
 \section{Education}
 \cventry{2010--2014}{BS, Mechanical Engineering}{University of Wisconsin - Madison}{Madison, WI}{}{}
